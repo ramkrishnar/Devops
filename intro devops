@@ -1,0 +1,9 @@
+devops:
+-------  it is methodlogy improve the collrabation b/w developer and operation using auto machine tools in various stages.
+
+devops life cycle:
+------------------
+continues development:  plan,code
+continues testing: build,test
+continues depolyement:release,deploy
+continues monitring:opration,monitring
