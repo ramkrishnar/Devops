@@ -1,0 +1,11 @@
+install: sudo apt-get install docker.io
+docker --version
+pull image:-sudo docker pull ubuntu
+check availble images:- sudo docker images
+run image:- sudo docker run -it -d ubuntu (: -it means intract with teriminal,-d means run in background)
+list of running images;- sudo docker ps
+stop container:-sudo docker stop <container-id>
+list of runing and stop images:-sudo docker ps -a
+executing container:-sudo docker exec -it e963188316cc bash
+delete container from system:-sudo docker rm 422cfffbdb3a
+delete image : sudo docker rmi <image-id>(:- must be deleted all containers from the image)
