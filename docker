@@ -9,3 +9,20 @@ list of runing and stop images:-sudo docker ps -a
 executing container:-sudo docker exec -it e963188316cc bash
 delete container from system:-sudo docker rm 422cfffbdb3a
 delete image : sudo docker rmi <image-id>(:- must be deleted all containers from the image)
+container commit the changes:- sudo docker commit e57470328c6c test
+remove all containers in image: sudo docker rm -f ${sudo docker ps -a -q}
+apache software  setting ports: sudo docker run -it -p 82:80 -d test
+connect to docker hub:-  sudo docker login
+no need to use the sudo command: sudo usermod -aG docker $USER
+build docker file : sudo docker build . -t new_dockerfile (file name must be Dockerfile)
+in Dockerfile
+----------------
+FROM ubuntu
+RUN apt-get update
+RUN apt-get -y install apache2
+ADD . /var/www/html
+ENTRYPOINT apachectl -D FOREGROUND
+ENV name rk
+-----------
+run image :sudo docker run -it -p 84:80 -d  new_dockerfile
+create docker volume:-sudo docker volume create test1
