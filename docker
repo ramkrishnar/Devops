@@ -26,3 +26,7 @@ ENV name rk
 -----------
 run image :sudo docker run -it -p 84:80 -d  new_dockerfile
 create docker volume:-sudo docker volume create test1
+run docker volume:docker run -it --mount source=test1,target=/app -d ubuntu
+docker swaram:
+--------------
+swarm intilizartion:docker swarm init --advertise-addr=13.59.125.70
